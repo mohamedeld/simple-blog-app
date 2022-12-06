@@ -1,0 +1,11 @@
+<li>
+    <article class="post">
+        <a href="{{ post.get_absolute_url }}">
+            <img src="{{ post.image.url }}" alt="Mountain">
+            <div class="post__content">
+                <h3>{{post.title}}</h3>
+                <p>{{post.excerpt}}</p>
+            </div>
+        </a>
+    </article>
+</li>

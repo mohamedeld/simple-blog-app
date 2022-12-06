@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    blog
+{% endblock title %}
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog_app/post.css' %}">
+    <link rel="stylesheet" href="{% static 'blog_app/index.css' %}">
+{% endblock css_files %}
+{% block body %}
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog_app/images/photo.jpg' %}" alt="Mohamed - The Author of this post">
+            <h2>Mohamed's Blog</h2>
+        </header>
+        <p>Hi, I'm Mohamed and i love Programming and Tech</p>
+    </section>
+    <section id="latest-posts">
+        <h2>My Latest Posts</h2>
+        <ul>
+            {% for post in latest_posts %}
+                {% include 'blog_app/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+    <section id="about">
+        <h2>What I do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde, autem nisi expedita error consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi blanditiis ratione corporis expedita soluta, sed odio?</p>
+    </section>
+{% endblock body %}

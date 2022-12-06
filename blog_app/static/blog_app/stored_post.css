@@ -1,0 +1,31 @@
+#main-navigation {
+    background-color: #390281;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+#store_post{
+    margin:8rem auto 3rem auto;
+    padding:2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background:#fff;
+    width:90%;
+    max-width: 30rem;
+}
+#store_post ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+#store_post li{
+    padding:1rem;
+    margin:1rem 0;
+    border:1px solid #ccc;
+}
+#store_post a{
+    text-decoration: none;
+    display:block;
+    width:100%;
+    padding:1rem;
+    text-align: center;
+    margin:0 auto;
+}
